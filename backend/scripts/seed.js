@@ -8,14 +8,14 @@ async function main() {
 
   // 1. Get or Create a User
   let user = await prisma.user.findFirst({
-    where: { email: 'test@example.com' }
+    where: { email: 'seed@codity.ai' }
   });
 
   if (!user) {
     user = await prisma.user.create({
       data: {
-        name: 'Test User',
-        email: 'test@example.com',
+        name: 'Automation Seed User',
+        email: 'seed@codity.ai',
         passwordHash: await bcrypt.hash('password123', 10)
       }
     });

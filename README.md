@@ -11,6 +11,44 @@ A simplified version of the background job processing systems used by YouTube (v
 - A separate **Worker** process polls the database and executes jobs with configurable retry logic
 - A **Dashboard** shows live job status, execution logs, and throughput charts
 
+---
+
+## 📸 System Showcase
+
+<div align="center">
+  <h3>Global Dashboard & Analytics</h3>
+  <img src="screenshots/11_queue_statistics_dashboard.png" alt="Queue Statistics Dashboard" width="800" style="border-radius: 8px; margin-bottom: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" />
+  <p><em>Real-time visualization of queue health, throughput, active executions, and worker utilization.</em></p>
+</div>
+
+<br/>
+
+<details>
+<summary><b>View More Screenshots (Click to expand)</b></summary>
+<br/>
+
+| **Projects & Queues** | **Job Management** |
+| :---: | :---: |
+| <img src="screenshots/03_projects_list.png" width="400" /> <br/> *Project Management* | <img src="screenshots/07_jobs_list_page.png" width="400" /> <br/> *Paginated Jobs List* |
+| <img src="screenshots/04_queue_detail_page.png" width="400" /> <br/> *Queue Details & Throughput* | <img src="screenshots/08_job_detail_page.png" width="400" /> <br/> *Job Execution Timeline* |
+
+<br/>
+
+| **Job Creation** | **Resilience & Fault Tolerance** |
+| :---: | :---: |
+| <img src="screenshots/05_job_creation_immediate.png" width="400" /> <br/> *Immediate & Delayed Jobs* | <img src="screenshots/09_failed_job_retried.png" width="400" /> <br/> *Failed Jobs Tracking* |
+| <img src="screenshots/06_job_creation_recurring.png" width="400" /> <br/> *CRON Recurring & Batch Jobs* | <img src="screenshots/10_dead_letter_queue.png" width="400" /> <br/> *Dead Letter Queue (DLQ)* |
+
+<br/>
+
+| **Authentication** |
+| :---: |
+| <img src="screenshots/02_login_page.png" width="400" /> <br/> *Secure Login* |
+
+</details>
+
+---
+
 ## Tech Stack
 
 | Layer | Technology |
