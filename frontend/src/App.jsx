@@ -7,6 +7,7 @@ import ProjectsPage from './pages/ProjectsPage'
 import ProjectDetailPage from './pages/ProjectDetailPage'
 import QueueDetailPage from './pages/QueueDetailPage'
 import JobDetailPage from './pages/JobDetailPage'
+import JobsPage from './pages/JobsPage'
 import Layout from './components/Layout'
 
 function PrivateRoute({ children }) {
@@ -27,6 +28,7 @@ export default function App() {
               <Route path="/projects" element={<ProjectsPage />} />
               <Route path="/projects/:projectId" element={<ProjectDetailPage />} />
               <Route path="/queues/:queueId" element={<QueueDetailPage />} />
+              <Route path="/jobs" element={<JobsPage />} />
               <Route path="/jobs/:jobId" element={<JobDetailPage />} />
               <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>

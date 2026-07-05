@@ -19,15 +19,8 @@ import {
 
 const SIDEBAR_LINKS = [
   { name: 'Dashboard', path: '/', icon: LayoutDashboard },
-  { name: 'Organizations', path: '/organizations', icon: Building2 },
   { name: 'Projects', path: '/projects', icon: FolderOpen },
-  { name: 'Queues', path: '/queues', icon: ListOrdered },
-  { name: 'Jobs', path: '/jobs', icon: Briefcase },
-  { name: 'Workers', path: '/workers', icon: Server },
-  { name: 'Retry Queue', path: '/retry-queue', icon: RefreshCw },
-  { name: 'Dead Letter Queue', path: '/dlq', icon: Skull },
-  { name: 'Execution Logs', path: '/logs', icon: FileText },
-  { name: 'Settings', path: '/settings', icon: Settings },
+  { name: 'Global Jobs', path: '/jobs', icon: Briefcase },
 ];
 
 export default function Layout({ children }) {
