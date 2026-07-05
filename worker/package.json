@@ -1,0 +1,19 @@
+{
+  "name": "distributed-job-scheduler-worker",
+  "version": "1.0.0",
+  "description": "Background job worker that polls SQLite and executes jobs",
+  "main": "src/poller.js",
+  "scripts": {
+    "worker": "node src/poller.js",
+    "start": "node src/poller.js"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.14.0",
+    "cron-parser": "^4.9.0",
+    "dotenv": "^16.4.5",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "prisma": "^5.14.0"
+  }
+}
